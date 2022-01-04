@@ -65,7 +65,7 @@ node {
                 bat "${toolbelt} update"
                 rc = bat returnStatus: true, script: "${toolbelt} auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${jwt_key_file}\" --loglevel DEBUG --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
                 if(rc == 0){
-                    rTestMsg = bat returnStatus: true, script: "${toolbelt} force:apex:test:run"
+                    rTestMsg = bat returnStatus: true, script: "${toolbelt} force:apex:test:run -u ${HUB_ORG}"
                 }
             }
         }
