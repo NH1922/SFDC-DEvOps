@@ -5,7 +5,8 @@
       "default": true
     }
   ],
-  "name": "PG_DevOps",
+
+  "name": "SFDC_DevOps",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "52.0"
